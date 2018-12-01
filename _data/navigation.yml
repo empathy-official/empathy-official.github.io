@@ -14,11 +14,7 @@
   link: /contact/
   new_window: false
   highlight: false
-- name: Login
-  link: /
-  new_window: true
-  highlight: false
-- name: Sign Up
-  link: /
+- name: 제휴업체 등록
+  link: /alliance/
   new_window: true
   highlight: true
