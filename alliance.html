@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Empathy-alliance</title>
+</head>
+<body>
+        <!-- <script type="text/javascript"> 
+                function kor(){
+                    var frm = document.all_form;
+                    frm.acceptCharset = 'utf-8';
+                    if(document.all)document.charset = 'utf-8'; // 익스플로러에서는 이렇게 해줘야 됩니다. (버그성 이라고 하네여)
+                    frm.submit();
+             
+                    // 폼 전송을 새창으로 했을경우 기존 문자셋으로 되돌려 놓기 위한 처리입니다.
+                    frm.acceptCharset = 'euc-kr';
+                    if(document.all)document.charset = 'euc-kr';
+                }
+            
+            </script> -->
+
+    <form action="http://ec2-13-209-245-253.ap-northeast-2.compute.amazonaws.com:8080/info/alliance" method="POST" enctype="multipart/form-data" accept-charset="utf-8" name="all_form">
+    <!-- <form action="http://localhost:8080/info/alliance" method="POST" enctype="multipart/form-data" name="all_form" accept-charset="utf-8"> -->
+        <input type="file" name="file" placeholder="파일">
+        <input type="text" name="title" placeholder="제목">
+        <input type="text" name="subTitle" placeholder="부제목">
+        <input type="text" name="locationStr" placeholder="위치" >
+        <textarea name="introduce" placeholder="간단한소개"></textarea>
+        <!-- <input type="text" name="introduce" placeholder="간단한 소개"> -->
+        <textarea name="dayTime" placeholder="운영 일자"></textarea>
+        <!-- <input type="text" name="dayTime" placeholder="운영 일"> -->
+        <!-- <input type="text" name="hourTime" placeholder="운영 시간"> -->
+        <textarea name="hourTime" placeholder="운영 시간"></textarea>
+        <!-- <input type="text" name="priceInfo" placeholder="가격"> -->
+        <textarea name="priceInfo" placeholder="운영 일자"></textarea>
+        <button onclick="kor()">submit</button>
+    </form>
+</body>
+</html>
