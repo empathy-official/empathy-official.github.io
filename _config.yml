@@ -9,7 +9,7 @@ google_maps_javascript_api_key:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /app_icon.png
+logo: /images/app_icon.png
 description: '공감 - 공간에 감성을 더하다' 프로모션 블로그입니다.
 author:
   name:
