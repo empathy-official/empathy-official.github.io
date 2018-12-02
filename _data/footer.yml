@@ -11,8 +11,8 @@
   - name: Login
     link: /
     new_window: true
-  - name: Sign Up
-    link: /
+  - name: Alliance
+    link: /alliance/
     new_window: true
   - name: Docs
     link: /
